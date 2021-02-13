@@ -20,14 +20,19 @@ const App = () => {
       id: 3,
       text: 'Doctors Appointment',
       day: 'Feb 5th at 2:30pm',
-      remind: true,
+      remind: false,
     },
   ])
+
+  //Delete Task
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id))
+  }
 
   return (
     <div className='container'>
       <Header />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask}/>
     </div>
   );
 }
