@@ -3,7 +3,7 @@
     {
       "text": "Dinner",
       "day": "Tuesday night",
-      "reminder": true,
+      "reminder": false,
       "id": 2
     },
     {
